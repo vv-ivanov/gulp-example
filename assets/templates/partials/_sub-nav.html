@@ -1,0 +1,9 @@
+<div class="sub-nav">
+  <ul class="sub-nav__list">
+    @@for (var i = 0; i < data.length; i++) {
+      <li class="sub-nav__item `+data[i].active+`">
+        <a href="`+data[i].link+`" class="sub-nav__link">`+data[i].text+`</a>
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,26 @@
+@@include('partials/_header.html', {
+  "title": "Главная страницы Отрасли",
+  "page": "index"
+})
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/> -->
+
+@@include('partials/_header-lk.html', {
+  "title": "Главная страницы Отрасли",
+  "page": "index"
+})
+
+<main class="main">
+  <h1>тело страницы</h1>
+  <div class="slider js-slider">
+    <div class="slider__item"><img src="/img/content/catalog/note/1.jpg" alt="" class="slider__item-img"></div>
+    <div class="slider__item"><img src="/img/content/catalog/note/2.jpg" alt="" class="slider__item-img"></div>
+    <div class="slider__item"><img src="/img/content/catalog/note/3.jpg" alt="" class="slider__item-img"></div>
+    <div class="slider__item"><img src="/img/content/catalog/note/1.jpg" alt="" class="slider__item-img"></div>
+  </div>
+</main>
+
+@@include('partials/_footer.html',  {
+  "scripts": ["js/sliders.min.js", "js/test.min.js"]
+})

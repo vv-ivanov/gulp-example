@@ -1,0 +1,55 @@
+// Общие стили
+
+.page {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  &--min {
+    max-width: 1000px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.laptop {
+  display: none !important;
+  @media (max-width: $screen-llg) {
+    display: block !important;
+  }
+}
+
+.laptop-lg {
+  display: none !important;
+  @media (max-width: $screen-lg) {
+    display: block !important;
+  }
+}
+
+.mobile {
+  display: none !important;
+  @media (max-width: $screen-md) {
+    display: block !important;
+  }
+}
+
+.hide-laptop-lg {
+  @media (max-width: $screen-lg) {
+    display: none !important;
+  }
+}
+
+.hide-mobile {
+  @media (max-width: $screen-md) {
+    display: none !important;
+  }
+}

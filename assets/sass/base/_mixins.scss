@@ -1,0 +1,19 @@
+@mixin font($fontFam, $fontSize, $fontLineh, $fontColor) {
+  font-family: $fontFam;
+  font-size: $fontSize;
+  line-height: $fontLineh;
+  color:$fontColor;
+}
+
+/*media-query*/
+@mixin mediaMax($numMedia) {
+  @media (max-width: $numMedia + 1px) {
+    @content;
+  }
+}
+
+@mixin mediaMin($numMedia) {
+  @media (min-width: $numMedia - 1px){
+    @content;
+  }
+}
