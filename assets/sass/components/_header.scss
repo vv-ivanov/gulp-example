@@ -1,2 +1,23 @@
 
- 
+ //стили блок хедер
+.header{
+  background: $color-white;
+  // @include font("Arial", 25px, 30px, red);
+  @include mediaMax(760px){
+    background: red;
+  }
+
+  //стили элементов хедера
+  &__wrap{
+    display: flex;
+  }
+
+  //стили-модификаторы блока хэдер
+  &_width-700{
+    width: 700px;
+  }
+
+  &_color-green{
+    background: $color-green;
+  }
+}
